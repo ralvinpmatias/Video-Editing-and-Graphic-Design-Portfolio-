@@ -1,70 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ralvin Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ralvin Portfolio</title>
 
-  <style>
+<style>
+body{
+    margin:0;
+    background:#000;
+    color:white;
+    font-family:Arial, sans-serif;
+}
 
-    body{
-      margin:0;
-      background:#0f0f0f;
-      color:white;
-      font-family:Arial;
-    }
+header{
+    text-align:center;
+    padding:50px 20px;
+}
 
-    .hero{
-      text-align:center;
-      padding:100px 20px;
-    }
+header h1{
+    font-size:70px;
+    margin:0;
+    font-weight:bold;
+}
 
-    .hero h1{
-      font-size:70px;
-      margin-bottom:10px;
-    }
+header p{
+    color:#cfcfcf;
+    margin-top:10px;
+    font-size:20px;
+}
 
-    .hero p{
-      color:#bdbdbd;
-      font-size:22px;
-    }
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:40px;
+    max-width:1400px;
+    margin:auto;
+}
 
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-      gap:20px;
-      padding:40px;
-    }
+.gallery img{
+    width:100%;
+    border-radius:20px;
+    transition:.3s;
+}
 
-    .gallery img{
-      width:100%;
-      border-radius:20px;
-      transition:0.3s;
-    }
+.gallery img:hover{
+    transform:scale(1.03);
+}
 
-    .gallery img:hover{
-      transform:scale(1.03);
-    }
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-top:50px;
+}
 
-  </style>
+video{
+    width:100%;
+    border-radius:20px;
+}
+</style>
 
 </head>
-
 <body>
 
-<div class="hero">
-  <h1>RALVIN PORTFOLIO</h1>
+<header>
+    <h1>RALVIN PORTFOLIO</h1>
+    <p>Video Editor • Graphic Designer • Social Media Manager</p>
+</header>
 
-  <p>
-    Video Editor • Graphic Designer • Social Media Manager
-  </p>
-</div>
+<h2 class="section-title">Graphic Design</h2>
 
 <div class="gallery">
 
-  <img src="2025 1.png">
+<img src="2025_1.png">
+<img src="78 percent_3 (2).png">
+<img src="bilis ng panahon4.png">
+<img src="bonifacio day-4.png">
+<img src="christmas_2.png">
+<img src="evolve with your business_1.png">
+<img src="good mood zombie mode-1.png">
+<img src="group insurance_1.png">
+<img src="para sa 77 percent-1.png">
+<img src="para sa 77 percent-5.png">
+<img src="sweldo-1.png">
+<img src="umahon sa utang 1.png">
 
-  <img src="christmas_2.png">
+</div>
 
-  <img src="sweldo-1.png">
+<h2 class="section-title">Video Editing</h2>
+
+<div class="gallery">
+
+<video controls>
+<source src="video-editing/sample1.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="video-editing/sample2.mp4" type="video/mp4">
+</video>
 
 </div>
 
